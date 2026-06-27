@@ -1,31 +1,33 @@
 # HoverIlvl
 
-Mostra l'item level dei giocatori direttamente nel tooltip quando ci passi sopra con il cursore.
+Shows the item level of other players directly in the tooltip when you hover over them.
 
-## Funzionalità
+## Features
 
-- Aggiunge una riga `Item Level: NNN` al tooltip dei giocatori
-- Usa il sistema di inspect ufficiale del client (`NotifyInspect` / `C_PaperDollInfo.GetInspectItemLevel`)
-- Cache da 120 secondi per non sovraccaricare il server con richieste di inspect
-- Compatibile con altri addon che usano l'inspect (chiama `ClearInspectPlayer` al termine)
-- Tooltip si auto-aggiorna quando i dati di inspect arrivano
+- Adds an `Item Level: NNN` line to the player tooltip
+- Uses the official client inspect system (`NotifyInspect` / `C_PaperDollInfo.GetInspectItemLevel`)
+- 120-second cache so the server is not flooded with inspect requests
+- Plays nice with other inspect-based addons (calls `ClearInspectPlayer` when done)
+- Tooltip auto-refreshes as soon as inspect data arrives
 
-## Installazione
+## Installation
 
-Tramite CurseForge / Wago / WowUp — cerca **HoverIlvl**.
+Via CurseForge / Wago / WowUp — search for **HoverIlvl**.
 
-Manuale: copia la cartella `HoverIlvl` in `World of Warcraft\_retail_\Interface\AddOns\`.
+Manual: copy the `HoverIlvl` folder into `World of Warcraft\_retail_\Interface\AddOns\`.
 
-## Limiti
+## Limitations
 
-- Funziona solo su player nella stessa fazione/gruppo, visibili e in range di inspect (limite del client, non dell'addon)
-- Il primo hover su un player mostra l'ilvl dopo ~0.3–1s (tempo di risposta del server)
-- Non funziona su nemici in arena (Blizzard blocca `CanInspect`)
+These are client-side limits, not addon bugs:
 
-## Versione supportata
+- Only works on players in your faction/group, visible, and within inspect range
+- The first hover on a player shows the ilvl after ~0.3–1s (server response time)
+- Does not work on enemies in arenas (Blizzard blocks `CanInspect`)
+
+## Supported version
 
 Retail — The War Within (Interface 11.0.2+).
 
-## Licenza
+## License
 
-MIT. Vedi [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
