@@ -6,7 +6,7 @@
 ## IconTexture: Interface\Icons\INV_Misc_EngGizmos_30
 ## SavedVariables: HoverIlvlDB
 ## X-License: MIT
-## X-Curse-Project-ID:
+## X-Curse-Project-ID: 1590328
 ## X-Wago-ID:
 
 HoverIlvl.lua
