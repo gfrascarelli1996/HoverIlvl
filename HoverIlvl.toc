@@ -1,0 +1,12 @@
+## Interface: 110200
+## Title: HoverIlvl
+## Notes: Mostra l'item level dei giocatori nel tooltip al passaggio del cursore.
+## Author: gianl
+## Version: @project-version@
+## IconTexture: Interface\Icons\INV_Misc_EngGizmos_30
+## SavedVariables: HoverIlvlDB
+## X-License: MIT
+## X-Curse-Project-ID:
+## X-Wago-ID:
+
+HoverIlvl.lua
