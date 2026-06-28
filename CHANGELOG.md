@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- Fix Lua error "bad argument #1 to 'UnitIsPlayer'" when hovering hostile mobs or nameplates (filter by GUID instead, avoid touching the secure unit token)
+
 ## 1.1.0
 
 - Persistent cache: known players' item levels survive logout/relog (configurable TTL, default 7 days)

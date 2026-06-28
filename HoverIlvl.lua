@@ -169,20 +169,28 @@ frame:SetScript("OnEvent", function(self, event, arg1)
     end
 end)
 
-local function OnTooltipUnit(tooltip)
+local function OnTooltipUnit(tooltip, data)
     if tooltip ~= GameTooltip then return end
     if not NS.db or not NS.db.tooltipEnabled then return end
 
-    local _, unit = tooltip:GetUnit()
-    if not unit or not UnitIsPlayer(unit) then return end
-
-    local guid = UnitGUID(unit)
-    if not guid then return end
+    local guid = data and data.guid
+    local unit
+    if not guid then
+        _, unit = tooltip:GetUnit()
+        if unit then guid = UnitGUID(unit) end
+    end
+    if not guid or not guid:match("^Player%-") then return end
 
     local ilvl = GetCachedIlvl(guid)
     if ilvl then
         tooltip:AddLine(FormatTooltipLine(ilvl))
-    elseif UnitIsVisible(unit) and CanInspect(unit) then
+        return
+    end
+
+    if not unit then
+        _, unit = tooltip:GetUnit()
+    end
+    if unit and UnitIsVisible(unit) and CanInspect(unit) then
         RequestInspect(unit, guid)
     end
 end
