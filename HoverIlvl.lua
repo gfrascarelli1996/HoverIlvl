@@ -179,7 +179,10 @@ local function OnTooltipUnit(tooltip, data)
         _, unit = tooltip:GetUnit()
         if unit then guid = UnitGUID(unit) end
     end
-    if not guid or not guid:match("^Player%-") then return end
+    if not guid then return end
+
+    local ok, isPlayer = pcall(string.match, guid, "^Player%-")
+    if not ok or not isPlayer then return end
 
     local ilvl = GetCachedIlvl(guid)
     if ilvl then
