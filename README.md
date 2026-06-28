@@ -26,7 +26,7 @@ These are client-side limits, not addon bugs:
 
 ## Supported version
 
-Retail — The War Within (Interface 11.0.2+).
+Retail — Midnight (Interface 12.0.7+).
 
 ## License
 
