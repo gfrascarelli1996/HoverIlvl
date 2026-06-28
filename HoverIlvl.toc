@@ -1,4 +1,4 @@
-## Interface: @toc-version-retail@
+## Interface: 110200
 ## Title: HoverIlvl
 ## Notes: Mostra l'item level dei giocatori nel tooltip al passaggio del cursore.
 ## Author: gianl
