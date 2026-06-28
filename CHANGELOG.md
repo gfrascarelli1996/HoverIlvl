@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.3
+
+- Add Ko-fi support button to README (donations are voluntary; addon stays free and fully functional)
+
 ## 1.1.2
 
 - Fix Lua error in dungeons/raids when hovering hostile NPCs whose GUID is a "secret string value" (guard the player-prefix check with pcall and bail out on the secret case)

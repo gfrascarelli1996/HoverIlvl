@@ -34,3 +34,9 @@ Retail — Midnight (Interface 12.0.7+).
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Support development
+
+HoverIlvl is free and always will be. If it saves you time and you want to say thanks, a coffee is appreciated:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/hadorn96)
