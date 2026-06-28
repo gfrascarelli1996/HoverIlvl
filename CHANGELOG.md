@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.4
+
+- Translate remaining Italian release notes (1.0.0) to English for consistency
+
 ## 1.1.3
 
 - Add Ko-fi support button to README (donations are voluntary; addon stays free and fully functional)
@@ -26,6 +30,6 @@
 
 ## 1.0.0
 
-- Prima release
-- Item level dei giocatori nel tooltip al passaggio del cursore
-- Cache 120s e dedupe inspect per non sovraccaricare il server
+- First release
+- Shows other players' item level in the tooltip on hover
+- 120s cache and inspect dedupe to avoid spamming the server
