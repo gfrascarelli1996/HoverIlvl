@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+- Auto-update Interface version at build time via packager keyword (fixes "Incompatible" warning on newer client patches)
+
 ## 1.0.0
 
 - Prima release
