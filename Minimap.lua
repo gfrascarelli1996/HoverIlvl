@@ -1,14 +1,19 @@
 local ADDON_NAME, NS = ...
 
 local BUTTON_NAME = "HoverIlvlMinimapButton"
-local RADIUS = 80
+local EDGE_OFFSET = 8
 local mmButton
+
+local function GetEdgeRadius()
+    return (Minimap:GetWidth() / 2) + EDGE_OFFSET
+end
 
 local function PositionAtAngle(angle)
     if not mmButton then return end
+    local radius = GetEdgeRadius()
     local rad = math.rad(angle)
-    local x = math.cos(rad) * RADIUS
-    local y = math.sin(rad) * RADIUS
+    local x = math.cos(rad) * radius
+    local y = math.sin(rad) * radius
     mmButton:ClearAllPoints()
     mmButton:SetPoint("CENTER", Minimap, "CENTER", x, y)
 end

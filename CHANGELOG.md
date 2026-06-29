@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2
+
+- Fix minimap button being placed inside the minimap on larger minimap sizes; the orbital radius now adapts to `Minimap:GetWidth()`
+
 ## 1.2.1
 
 - Rename group/raid panel title from "HoverIlvl" to "Group Ilvl" for clarity
