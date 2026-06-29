@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+- Rename group/raid panel title from "HoverIlvl" to "Group Ilvl" for clarity
+
 ## 1.2.0
 
 - New minimap button: left-click toggles the group/raid panel, right-click opens the settings. Drag to move around the minimap. Hideable from the settings panel.

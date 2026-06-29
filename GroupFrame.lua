@@ -113,7 +113,7 @@ local function CreateGroupFrame()
 
     local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
     title:SetPoint("BOTTOM", frame, "TOP", 0, 2)
-    title:SetText("|cffffd100HoverIlvl|r")
+    title:SetText("|cffffd100Group Ilvl|r")
 
     local empty = frame:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
     empty:SetPoint("CENTER", frame, "CENTER", 0, 0)
