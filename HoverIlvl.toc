@@ -12,3 +12,4 @@
 HoverIlvl.lua
 Settings.lua
 GroupFrame.lua
+Minimap.lua

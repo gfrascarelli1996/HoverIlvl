@@ -12,6 +12,7 @@ A lightweight addon for **World of Warcraft Retail (Midnight)** that adds a colo
 - **Quality-colored** — the number is colored relative to your own ilvl: orange (much higher), purple (on par), blue/green/white (lower)
 - **Persistent cache** — known players' item levels survive logout/relog (default 7 days, configurable)
 - **Optional group/raid panel** — floating list of every party/raid member with their ilvl. Hidden by default, class-colored, draggable, lockable
+- **Minimap button** — left-click to toggle the group/raid panel, right-click to open settings. Draggable, hideable
 - **Settings panel** — integrated into Interface options, also reachable via slash commands
 - **Server-friendly** — throttled inspect with dedupe and round-robin polling, calls `ClearInspectPlayer` so it plays nice with other inspect addons (Examiner, InspectEquip, …)
 

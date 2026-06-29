@@ -7,6 +7,8 @@ local DEFAULTS = {
     groupFrameShown = false,
     groupFrameLocked = false,
     groupFramePoint = { "CENTER", 0, 0 },
+    minimapButtonShown = true,
+    minimapAngle = 220,
 }
 
 local MAX_CACHE_ENTRIES = 500

@@ -52,6 +52,12 @@ local function BuildPanel()
         if NS.GroupFrame then NS.GroupFrame:EnableMouse(not value) end
     end)
 
+    local mmSet = AddCheckbox("minimapButtonShown", "Show minimap button",
+        "Adds a small icon on the minimap. Left-click toggles the group panel, right-click opens these settings.")
+    mmSet:SetValueChangedCallback(function(_, value)
+        if NS.MinimapButton then NS.MinimapButton:SetShown(value) end
+    end)
+
     Settings.RegisterAddOnCategory(category)
 end
 

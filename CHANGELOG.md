@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+
+- New minimap button: left-click toggles the group/raid panel, right-click opens the settings. Drag to move around the minimap. Hideable from the settings panel.
+
 ## 1.1.4
 
 - Translate remaining Italian release notes (1.0.0) to English for consistency
